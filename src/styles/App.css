@@ -1,0 +1,191 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* MainPage Styles */
+.mainpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.mainpage h1 {
+  margin-bottom: 30px;
+}
+
+.mainpage-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background-color: #007bff;
+  color: #fff;
+  height: 100vh;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Keeps sidebar fixed */
+  top: 0;
+  left: 0;
+  overflow: auto; /* Allows scrolling if content overflows */
+}
+
+.sidebar-header h2 {
+  margin-top: 0;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+  color: #e0e0e0;
+}
+
+/* Dashboard Styles */
+.dashboard {
+  display: flex;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  margin-left: 250px; /* Margin to accommodate fixed sidebar */
+  min-height: 100vh;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Login and Register Styles */
+.Login, .Register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.Login h2, .Register h2 {
+  margin-bottom: 20px;
+}
+
+/* AppointmentScheduler Styles */
+.AppointmentScheduler {
+  padding: 20px;
+  text-align: center;
+}
+
+.AppointmentScheduler h2 {
+  margin-bottom: 20px;
+}
+
+.AppointmentScheduler .react-datepicker-wrapper {
+  display: block;
+  margin: 0 auto;
+}
+
+.AppointmentScheduler .react-datepicker {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.AppointmentScheduler button {
+  margin-top: 20px;
+}
+
+.AppointmentScheduler div {
+  margin-top: 20px;
+}
+
+/* Dashboard Styles */
+.dashboard {
+  display: flex;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  margin-left: 250px; /* Margin to accommodate fixed sidebar */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align content */
+  justify-content: center; /* Center-align content vertically */
+}
+
+.dashboard-content button {
+  margin-top: 20px;
+}
+
+/* Appointment Date Display */
+.dashboard-content div {
+  margin-top: 20px;
+  text-align: center;
+}
+
