@@ -12,25 +12,28 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    // Here you would typically handle registration with an API
     await Swal.fire({
       title: 'Registration Successful',
       text: 'You have been registered successfully!',
       icon: 'success',
-      confirmButtonText: 'OK'
+      confirmButtonText: 'OK',
     });
     navigate('/dashboard');
   };
 
   return (
-    <div>
-      <h2>Register</h2>
-      <form onSubmit={handleSubmit}>
+    <div className="register-container">
+      <h2 className="register-title">Register</h2>
+      <form className="register-form" onSubmit={handleSubmit}>
         <input 
           type="text" 
           name="username" 
           placeholder="Username" 
           value={formData.username} 
           onChange={handleChange} 
+          className="register-input" 
+          required
         />
         <input 
           type="password" 
@@ -38,8 +41,10 @@ const Register = () => {
           placeholder="Password" 
           value={formData.password} 
           onChange={handleChange} 
+          className="register-input" 
+          required
         />
-        <button type="submit">Register</button>
+        <button type="submit" className="register-button">Register</button>
       </form>
     </div>
   );
